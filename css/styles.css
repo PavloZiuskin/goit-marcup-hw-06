@@ -771,3 +771,9 @@
 .socialyti-link:focus .socialyti-socials {
   fill: #ffffff;
 }
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  
+}
