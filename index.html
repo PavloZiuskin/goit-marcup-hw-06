@@ -79,16 +79,6 @@
           <button class="hero-button" type="button" data-modal-open>
             Замовити послугу
           </button>
-          <!-- MODAL WIndow -->
-          <div class="bacdroup is-hidden" data-modal>
-            <div class="modal">
-              <button class="close-modal" data-modal-close type="button">
-                <svg class="cross" width="18" height="18">
-                  <use class="res" href="./images/svg/Vecto.svg#cross"></use>
-                </svg>
-              </button>
-            </div>
-          </div>
         </div>
       </section>
       <!-- What we doing -->
@@ -649,18 +639,85 @@
         <form class="footer-form">
           <label class="form-label">
             Підпишіться на розсилку
-            <input class="form-input" type="email" name="email"
-            placeholder="E-mail">
+            <input
+              class="form-input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
           </label>
-           <button class="foter-btn" type="submit">Підписатися
+          <button class="foter-btn" type="submit">
+            Підписатися
             <svg width="24" height="24">
               <use href="./images/svg/icons.svg#send"></use>
             </svg>
           </button>
         </form>
-       
       </div>
     </footer>
+    <!-- MODAL WIndow -->
+    <div class="bacdroup is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-modal" data-modal-close type="button">
+          <svg class="cross" width="18" height="18">
+            <use class="res" href="./images/svg/Vecto.svg#cross"></use>
+          </svg>
+        </button>
+        <form class="form-modal" name="data-form" autocomplete="off" novalidate>
+          <strong> Залиште свої дані, ми вам передзвонимо</strong>
+
+          <div class="form">
+            <div class="user">
+              <label name="eser-name">
+                <span>Ім'я</span>
+                <input type="text" name="eser-name" />
+                <svg class="form-svg" width="18" height="18">
+                  <use></use>
+                </svg>
+              </label>
+            </div>
+
+            <div class="user">
+              <label name="tel">
+                <span>Телефон</span>
+                <input type="tel" name="tel" />
+                <svg class="form-svg" width="18" height="18">
+                  <use></use>
+                </svg>
+              </label>
+            </div>
+
+            <div class="user">
+              <label name="mail">
+                <span>Пошта</span>
+                <input type="mail" name="mail" />
+                <svg class="form-svg" width="18" height="18">
+                  <use></use>
+                </svg>
+              </label>
+            </div>
+
+            <div class="user">
+              <label name="comment">
+                <span>Коментар</span>
+                <textarea name="" rows="10" placeholder="Введіть текст"></textarea>
+              </label>
+            </div>
+          </div>
+
+          <label name="policy">
+            <input type="radio" name="policy" />
+            <span
+              >Погоджуюся з розсилкою та приймаю
+              <a href="">Умови договору</a></span
+            >
+          </label>
+
+          <button type="submit">Відправити</button>
+        </form>
+      </div>
+        
+    </div>
 
     <script src="./js/modal.js"></script>
   </body>

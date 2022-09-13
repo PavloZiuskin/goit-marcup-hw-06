@@ -274,12 +274,13 @@
   cursor: pointer;
 
   transition: background var(--animation-fast);
-  transition: box-shadow var(--animation-fast), border-radius var(--animation-fast);
+  transition: box-shadow var(--animation-fast),
+    border-radius var(--animation-fast);
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  background: #188CE8;
+  background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -584,7 +585,6 @@
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-
 .portfolio-link:hover .animation-text {
   transform: translatey(0);
 }
@@ -775,5 +775,63 @@
 .form-label {
   display: flex;
   flex-direction: column;
-  
+}
+
+/* MODAL WINDOW FORM */
+.form-modal {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.form {
+  max-width: 448px;
+  min-height: 342px;
+
+  display: flex;
+  flex-direction: column;
+
+  outline: 1px solid tomato;
+}
+
+strong {
+  display: block;
+  margin-bottom: 12px;
+  margin-right: auto;
+  margin-left: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.user {
+  position: relative;
+}
+
+.user span {
+  margin-bottom: 4px;
+
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.user > label {
+  display: flex;
+  flex-direction: column;
+}
+.user input {
+  height: 40px;
+}
+
+.form-svg {
+  position: absolute;
+  top: 30px;
+  left:12px;
+
 }
