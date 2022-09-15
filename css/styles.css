@@ -831,7 +831,8 @@ strong {
 
 .form-svg {
   position: absolute;
-  top: 30px;
+  top: 38px;
   left:12px;
+  transform: translateY(-50%);
 
 }
