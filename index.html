@@ -664,56 +664,60 @@
           </svg>
         </button>
         <form class="form-modal" name="data-form" autocomplete="off" novalidate>
-          <strong> Залиште свої дані, ми вам передзвонимо</strong>
+          <strong class="strong"> Залиште свої дані, ми вам передзвонимо</strong>
 
           <div class="form">
             <div class="user">
-              <label name="eser-name">
-                <span>Ім'я</span>
-                <input type="text" name="eser-name" />
+              <label class="form-lable" name="eser-name">
+                <span class="form-span">Ім'я</span>
+                <input class="data-information" type="text" name="eser-name" required/>
                 <svg class="form-svg" width="18" height="18">
-                  <use></use>
+                  <use class="data-svg" href="./images/svg/icons.svg#user"></use>
                 </svg>
               </label>
             </div>
 
             <div class="user">
-              <label name="tel">
-                <span>Телефон</span>
-                <input type="tel" name="tel" value="          "/>
+              <label class="form-lable" name="tel">
+                <span class="form-span">Телефон</span>
+                <input class="data-information" type="tel" name="tel" required/>
                 <svg class="form-svg" width="18" height="18">
-                  <use></use>
+                  <use class="data-svg" href="./images/svg/icons.svg#tel"></use>
                 </svg>
               </label>
             </div>
 
             <div class="user">
-              <label name="mail">
-                <span>Пошта</span>
-                <input type="mail" name="mail" />
+              <label class="form-lable" name="mail">
+                <span class="form-span">Пошта</span>
+                <input class="data-information" type="mail" name="mail" required/>
                 <svg class="form-svg" width="18" height="18">
-                  <use></use>
+                  <use class="data-svg" href="./images/svg/icons.svg#email"></use>
                 </svg>
               </label>
             </div>
 
             <div class="user">
-              <label name="comment">
-                <span>Коментар</span>
-                <textarea name="" rows="10" placeholder="Введіть текст"></textarea>
+              <label class="texarea-lable" name="comment">
+                <span class="form-span">Коментар</span>
+                <textarea class="form-texarea" name="" rows="10" placeholder="Введіть текст"></textarea>
               </label>
             </div>
           </div>
 
-          <label name="policy">
-            <input type="radio" name="policy" />
-            <span
+          <label class="form-policy" name="policy">
+            <input class="visually-hidden" type="checkbox" name="policy" required/>
+            <svg class="svg-policy" width="16" height="15">
+              <use class="unchecked" href="./images/svg/icons.svg#unchecked"></use>
+              <use class="checked" href="./images/svg/icons.svg#checked"></use>
+            </svg>
+            <span class="policy-span"
               >Погоджуюся з розсилкою та приймаю
-              <a href="">Умови договору</a></span
+              <a class="policy-link" href="">Умови договору</a></span
             >
           </label>
 
-          <button type="submit">Відправити</button>
+          <button class="form-btn" type="submit">Відправити</button>
         </form>
       </div>
         
