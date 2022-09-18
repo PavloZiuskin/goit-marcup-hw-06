@@ -336,14 +336,15 @@
 
 .cross {
   background-color: #fff;
-  padding: 4px;
   outline: none;
-  
+  object-fit: contain;
 }
 .ress {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   transition: fill var(--animation-fast);
 }
-
 
 .close-modal:hover > .cross .ress,
 .close-modal:focus > .cross .ress {
@@ -713,10 +714,8 @@
   margin-right: 70px;
 }
 
-
 .footer-add {
   display: block;
-  
 }
 
 .footer-item:not(:last-child) {
@@ -783,6 +782,7 @@
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 700;
+  font-family: inherit;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -824,6 +824,7 @@
 .footer-form {
   display: flex;
   align-items: flex-end;
+  gap: 12px;
 }
 
 .footer-form-div {
@@ -832,7 +833,6 @@
 .footer-lable {
   display: flex;
   flex-direction: column;
-  gap: 12px
 }
 
 .footer-form-text {
@@ -925,7 +925,6 @@
 .user {
   position: relative;
 }
-
 
 .user:not(:last-child) {
   margin-bottom: 10px;
